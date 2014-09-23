@@ -37,7 +37,6 @@ gem 'rmagick', :require => 'RMagick'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'friendly_id'
-gem 'passenger'
 gem 'pg'
 # Use unicorn as the app server
 # gem 'unicorn'
