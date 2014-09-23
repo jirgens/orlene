@@ -82,6 +82,7 @@ GEM
       daemon_controller (>= 1.2.0)
       rack
       rake (>= 0.8.1)
+    pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -156,6 +157,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   passenger
+  pg
   rails (= 4.1.1)
   rmagick
   sass-rails (~> 4.0.3)

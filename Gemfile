@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-
+gem 'sqlite3', group: :development
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'haml-rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
@@ -38,6 +38,7 @@ gem 'rmagick', :require => 'RMagick'
 gem 'bcrypt', '~> 3.1.7'
 gem 'friendly_id'
 gem 'passenger'
+gem 'pg'
 # Use unicorn as the app server
 # gem 'unicorn'
 
