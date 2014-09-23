@@ -1,0 +1,18 @@
+.container#content
+  .row.col-lg-10.col-lg-offset-1#portfolio
+    .row#pagehead
+      =link_to root_path, class: "btn btn-default" do
+        %i.glyphicon.glyphicon-arrow-left.pull-left
+      %br
+    - @albums.each do |album|
+      %hr/
+      %h3.template-title= link_to album.title, album_path(album)
+      %hr/
+      %br
+      .row#thumbs
+        .col-md-3
+          .well
+            - album.first_pictures.each do |picture|
+              = link_to picture do
+                %img.thumbnail.img-responsive(src="#{picture.photo}")
+                %br

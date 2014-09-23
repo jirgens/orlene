@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_bootstrap.min
+ *= require rails_bootstrap_forms
+ */
+
+html {
+
+}
+
+body {
+  margin: 0;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: #813c8e;
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+#menu-items ul li {
+  text-align: right;
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#background {
+  background-image: url('background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 1090;
+}
+
+#content {
+  max-width: 100%;
+  max-height: 475px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#contentimage {
+  max-width: 100%;
+  max-height: 525px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container#main {
+  max-height: 94%;
+  background-color: white;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin: 8%;
+  padding-top: 8px;
+}
+
+#menu ul {
+  margin: 0px;
+  padding-right: 40px;
+  list-style-type: none;
+    a:link {
+      color: #813c8e;
+    }
+    a:visited {
+      color: #813c8e;
+    }
+    a:hover {
+      color: #666;
+    }
+    a:active {
+      color: #813c8e;
+    }
+}
+
+#menu ul li {
+  display: inline;
+  float: right;
+  margin: 5px;
+  font-family: 'Quicksand', sans-serif;
+  a:link {
+    color: #813c8e;
+  }
+  a:visited {
+    color: #813c8e;
+  }
+  a:hover {
+    color: #666;
+  }
+  a:active {
+    color: #813c8e;
+  }
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #813c8e;
+}
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: #813c8e;
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+#email {
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+  padding: 4px;
+}
+
+
+.brand {
+  text-align: left;
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+.header {
+  margin: 17px;
+  padding-top: 10px;
+  color: #813c8e;
+}
+
+.navbar-brand {
+  font-family: 'Dawning of a New Day', cursive;
+  color: #813c8e;
+}
+
+hr {
+  height: 2px;
+}
+
+
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+}
+
+.leftie {
+  text-align: left;
+}
+
+.righty {
+  text-align: right;
+}
+
+#template-title {
+  padding: 9px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+%h3 Log In
+= bootstrap_form_tag url: sessions_path do |f|
+  %p
+    = f.email_field :email
+  %p
+    = f.password_field :password
+  %br/
+  %p.button= f.submit

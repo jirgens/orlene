@@ -1,0 +1,14 @@
+%h1 Portfolio
+- @album.each do |album|
+  %hr/
+  %h3.template-title= album.title
+  %hr/
+  %br
+  .row#thumbs
+    - @pictures.each do |picture|
+      .col-md-3
+        .well
+          =link_to image_tag(picture.photo.url, album_picture_path(@album, @picture))
+
+
+= link_to 'New Picture', new_picture_path

@@ -1,0 +1,134 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1, h2, h3, h4, h5 {
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#blog-column {
+  max-width: 22%;
+  margin: 17px;
+  img {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+  hr {
+    color: #813c8e;
+    height: 3px;
+    width: 85%;
+    align: center;
+  }
+  h5 {
+    text-align: center;
+  }
+  a:link {
+    color: #813c8e;
+  }
+  a:visited {
+    color: #813c8e;
+  }
+  a:hover {
+    color: #813c8e;
+  }
+  a:active {
+    color: #813c8e;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+#wedding-column {
+  max-width: 47%;
+  margin: 17px;
+  border-style: double;
+  border-color: #bda6fe;
+  background-color: #EAE5F5;
+  margin-bottom: 45px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  font-family: 'PT Sans', sans-serif;
+  img {
+    margin-bottom: 45px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+
+#about {
+  background-color: white;
+  // margin-left: 15px;
+  // margin-right: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin-bottom: 17px;
+  a:link {
+    color: #813c8e;
+  }
+  a:visited {
+    color: #813c8e;
+  }
+  a:hover {
+    color: #813c8e;
+  }
+  a:active {
+    color: #813c8e;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    color: #813c8e;
+  }
+}
+
+#terr-column {
+  max-width: 22%;
+  margin: 17px;
+  text-align: center;
+  img {
+    margin: 8px;
+    max-width: 175px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+
+#pagehead {
+  display: inline-block;
+}
+
+#my-picks-div {
+  margin-bottom: 15px;
+}
+
+#contact-div {
+
+}
+
+#contact {
+  text-align: center;
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#dashboard {
+  h1 {
+    text-align: center;
+  }
+}
+
+// portfolio page
+
+#portfolio {
+  max-height: 87%;
+}
+
+#thumbs {
+  display: inline-block;
+  text-align: center;
+}

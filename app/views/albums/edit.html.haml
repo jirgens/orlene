@@ -1,0 +1,13 @@
+%section#primaryphotos
+  .form-horizontal
+    = bootstrap_form_for :album do |primary_form|
+      = primary_form.fields_for :primary_photo do |primary_fields|
+        %h1 Edit Pictures on Home Page
+        %br
+        %h3 Top picture
+        %p
+          = f.select :primary_photo, options_for_select(@album.pictures, picture.id)
+          %br/
+          %br/
+
+= link_to 'Back', pictures_path

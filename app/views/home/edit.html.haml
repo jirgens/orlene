@@ -1,0 +1,17 @@
+.container#content
+  .row#dashboard
+    %h1 Hi Orlene!
+    %br/
+    %br/
+    %h3= link_to "New Post in My Picks", new_post_path
+    %br/
+    %br/
+    %h3= link_to "Edit a post in My Picks", posts_path
+    %br/
+    %br/
+    %h3= link_to "Add Photos to the Gallery", new_picture_path
+    %br/
+    %br/
+    %h3= link_to "Go to My Email", "http://webmail.laughingwithflowers.com/", target: '_blank'
+    %br
+    %h4.pull-left= link_to "Log Out", logout_path

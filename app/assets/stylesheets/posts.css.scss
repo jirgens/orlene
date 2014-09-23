@@ -1,0 +1,90 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1, h2, h3, h4, h5 {
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: #813c8e;
+}
+a:visited {
+  color: #813c8e;
+}
+a:hover {
+  color: #666;
+}
+a:active {
+  color: #813c8e;
+}
+
+
+#mypicks_form {
+  margin-bottom: 20px;
+}
+
+#post {
+  max-width: 775px;
+  img {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    text-align: center;
+  }
+  a {
+    color: #813c8e;
+  }
+  a:visited {
+    color: #813c8e;
+  }
+  a:hover {
+    color: #666;
+  }
+  a:active {
+    color: #813c8e;
+  }
+}
+
+#pagehead {
+  display: inline-block;
+}
+
+#posttitle {
+  text-align: center;
+}
+
+#postimage {
+  margin: 0 auto;
+}
+
+#postsindex {
+  margin-left: 0;
+}
+
+#showpost {
+  margin-left: 0;
+}
+
+#bottom-links {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+#minipostimage {
+  img {
+    max-width: 200px;
+    right-margin: 10px;
+  }
+}
+
+#minibody {
+  word-wrap: break-word;
+}

@@ -1,0 +1,23 @@
+%section#mypicks_form
+  .form-horizontal
+    = bootstrap_form_for(@post, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", :html => {:multipart => true}) do |f|
+      %p
+        = f.text_field :title
+      %p
+        = f.text_area :body, rows: 6
+      %p
+        = f.file_field :image
+        .row-centered (This will be the top picture in the post)
+        %br/
+      %p
+        = f.file_field :image2
+        .row-centered (This will be the middle picture in the post)
+        %br/
+      %p
+        = f.file_field :image3
+        .row-centered (This will be the bottom picture in the post)
+        %br/
+      .col-sm-6.col-md-offset-3
+        = f.submit(@post.new_record? ? "Post Your Pick" : "Save", class: 'btn btn-success')
+      %br/
+      %br

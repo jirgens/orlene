@@ -1,0 +1,69 @@
+.container#content
+  .col-lg-3#blog-column
+    %hr/
+    %h3= link_to 'My Picks', posts_path
+    %hr/
+    %h4= link_to @post.title, post_path(@post)
+    %br
+    .img-responsive.center-block#minipostimage= image_tag @post.image_url.to_s
+    %br
+    %p= @post.body
+    %br
+    %hr
+    %br
+    %h4= link_to @nextpost.title, post_path(@nextpost)
+    %br
+    .img-responsive.center-block#minipostimage= image_tag @nextpost.image_url.to_s
+    %br
+    %p= @nextpost.body
+    %br
+    %hr/
+    .section#contact
+      %h3 Contact
+      %hr/
+      %br
+      %a(href="mailto:orlene@laughingwithflowers.com") orlene@laughingwithflowers.com
+      %br
+      %br
+      %h4 503-241-0336
+      %br
+      %h4 Portland, Oregon
+      %br
+      %br
+      %img{src: "#{image_path('portland.png')}", class: "img-responsive"}
+  .col-lg-5#wedding-column
+    %br
+    %hr/
+    %h3= link_to 'Weddings', album_path(1)
+    %hr/
+    %br/
+    %img{src: "#{image_path('caketopper.jpg')}", class: "img-responsive"}
+    %img{src: "#{image_path('headbandthumb.jpg')}", class: "img-responsive"}
+    %br
+    .row.col-lg-10.col-lg-offset-1#about
+      %hr/
+      %h3 About
+      %hr/
+      %br
+      %p As an Oregon native, I specialize in local, in-season flowers and greenery. My unique style gives a soft edge and flair to my arrangements. My experience includes 16 years of being in the floral industry from cultivating a flower farm, to numerous years working with nursery product, while designing in high end floral shops from east to west coast.  While working with flowers is my passion, I also find time to work in a greenhouse propagating succulents.
+      %br
+      %br
+  .col-lg-3#terr-column
+    %hr/
+    %h3= link_to 'Terrariums', album_path(2)
+    %hr/
+    %img{src: "#{image_path('terr3thumb.jpg')}", class: "img-responsive"}
+    %br/
+    %img{src: "#{image_path('terr1thumb.jpg')}", class: "img-responsive"}
+    %br/
+    %img{src: "#{image_path('terr2thumb.jpg')}", class: "img-responsive"}
+    %br/
+    %img{src: "#{image_path('terr4thumb.jpg')}", class: "img-responsive"}
+    %br/
+    %img{src: "#{image_path('terr6thumb.jpg')}", class: "img-responsive"}
+    %br/
+    %img{src: "#{image_path('terr5thumb.jpg')}", class: "img-responsive"}
+    %br/
+    %br/
+    .well#delivery
+      %h5 Delivery available upon request in the Portland metro area.

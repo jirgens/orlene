@@ -1,0 +1,9 @@
+.container#content
+  .col-sm-12#postsindex
+    %h2 Recent posts
+    =link_to root_path, class: "btn btn-default" do
+      %i.glyphicon.glyphicon-arrow-left.pull-left
+    %br
+    - @posts.each do |post|
+      = render 'post', post: post
+    %br/

@@ -1,0 +1,6 @@
+.container#content
+  .col-sm-12#showpost
+    =link_to posts_path, class: "btn btn-default" do
+      %i.glyphicon.glyphicon-arrow-left.pull-left
+    %br
+    = render 'post', post: @post
