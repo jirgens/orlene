@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 gem 'inherited_resources'
 gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
-
+gem 'rails_12factor'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'friendly_id'
