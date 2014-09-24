@@ -1,5 +1,5 @@
 class PicturesController < InheritedResources::Base
-  actions :show, :destroy
+  actions :show
   before_filter :require_user, except: [:index, :show]
 
 
@@ -25,6 +25,12 @@ class PicturesController < InheritedResources::Base
       format.html
       format.json { render json: @pictures }
     end
+  end
+
+  def destroy
+    @picture = Picture.find(params[:id])
+    @picture.destroy
+    redirect_to albums_path
   end
 
   private
