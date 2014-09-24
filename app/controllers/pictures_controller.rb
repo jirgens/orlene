@@ -1,7 +1,7 @@
 class PicturesController < InheritedResources::Base
   actions :show, :destroy
   before_filter :require_user, except: [:index, :show]
-  before_filter :find_album
+
 
   def new
     @picture = Picture.new
