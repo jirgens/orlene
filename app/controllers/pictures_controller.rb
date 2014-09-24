@@ -27,18 +27,9 @@ class PicturesController < InheritedResources::Base
     end
   end
 
-  # def show
-  #   @picture = Picture.find(picture_params)
-  # end
-
   private
 
   def picture_params
     params.require(:picture).permit(:photo, :caption, :album_id)
   end
-
-  def find_album
-    @album = Album.find_by(:id)
-  end
-
 end
