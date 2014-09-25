@@ -9,9 +9,9 @@
       %hr/
       %br
     .row#thumbs
-      .col-md-3
-        .well
-          - @album.pictures.each do |picture|
+      - @album.pictures.each do |picture|
+        .col-md-3
+          .well
             = link_to picture do
               %img.thumbnail.img-responsive(src="#{picture.photo}")
               %br
