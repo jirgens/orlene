@@ -27,6 +27,13 @@ class Image3Uploader < CarrierWave::Uploader::Base
   # Process files as they are uploaded:
   # process :scale => [200, 300]
   #
+  process :auto_orient
+
+  def auto_orient
+    manipulate! do |img|
+      img = img.auto_orient
+    end
+  end
   # def scale(width, height)
   #   # do something
   # end
