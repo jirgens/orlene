@@ -38,6 +38,7 @@ gem 'spring',        group: :development
 
 gem 'inherited_resources'
 gem 'carrierwave'
+gem 'fog'
 gem 'rmagick', :require => 'RMagick'
 gem 'rails_12factor'
 # Use ActiveModel has_secure_password
