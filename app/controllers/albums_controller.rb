@@ -1,11 +1,6 @@
 class AlbumsController < InheritedResources::Base
-  actions :new, :show
+  actions :index, :new, :show
   before_filter :require_user, except: [:index, :show]
-
-
-  def index
-    album.pictures.order('created_at DESC').limit(4)
-  end
 
   def new
     @album = Album.new

@@ -10,7 +10,7 @@
       %hr/
       %br
       .row#thumbs
-        - album.pictures.each do |picture|
+        - album.pictures.sort_by{|t| - t.created_at.to_i}.first(4).each do |picture|
           .col-md-3.thumb
             = link_to picture do
               %img.thumbnail.img-responsive(src="#{picture.photo}")
