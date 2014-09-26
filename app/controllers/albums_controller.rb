@@ -1,5 +1,5 @@
 class AlbumsController < InheritedResources::Base
-  actions :index, :new
+  actions :index, :new, :show
   before_filter :require_user, except: [:index, :show]
 
   # def index
@@ -18,7 +18,7 @@ class AlbumsController < InheritedResources::Base
 
   # def show
   #   @album = Album.find(params[:id])
-  #   @album.pictures.limit(4).order("created_by")
+  #   album.pictures.limit(4).order("created_by")
   # end
 
 
