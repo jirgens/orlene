@@ -16,10 +16,10 @@ class AlbumsController < InheritedResources::Base
     @picture = @album.pictures.find_by(:id)
   end
 
-  def show
-    @album = Album.find(params[:id])
-    @album.pictures.limit(4).order("created_by")
-  end
+  # def show
+  #   @album = Album.find(params[:id])
+  #   @album.pictures.limit(4).order("created_by")
+  # end
 
 
   def create
