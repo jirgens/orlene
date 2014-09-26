@@ -4,10 +4,10 @@
       =link_to root_path, class: "btn btn-default" do
         %i.glyphicon.glyphicon-arrow-left.pull-left
       %br
-      %hr/
-      %h3.template-title= @album.title
-      %hr/
-      %br
+    %hr/
+    %h3.template-title= @album.title
+    %hr/
+    %br
     .row#thumbs
       - @album.pictures.each do |picture|
         .col-md-3
