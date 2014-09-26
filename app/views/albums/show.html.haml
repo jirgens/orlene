@@ -11,7 +11,6 @@
     .row#thumbs
       - @album.pictures.each do |picture|
         .col-md-3
-          .well
-            = link_to picture do
-              %img.thumbnail.img-responsive(src="#{picture.photo}")
-              %br
+          = link_to picture do
+            %img.thumbnail.img-responsive(src="#{picture.photo}")
+            %br
