@@ -1,4 +1,4 @@
-User.create(:id => 1, :email => 'orlene@laughingwithflowers.com', :password => 'winnielou')
+User.create(:id => 1, :email => 'orlene.sandefer', :password => 'weddings/events!')
 
 User.create(:id => 2, :email => 'jessa.irg@gmail.com', :password => 'brooklyn')
 
